@@ -2,7 +2,7 @@
 
 <%= form_for :user, url: users_path do |f| %>
   <p>
-    <%= f.label :Email %><br>
+    <%= f.label :"E-mail" %><br>
     <%= f.text_field :Email %>
   </p>
  
@@ -11,6 +11,11 @@
     <%= f.text_field :Password %>
   </p>
  
+  <p>
+    <%= f.label :"Confirm Password" %><br>
+    <%= f.text_field :ConfirmPassword %>
+  </p>
+  
   <p>
     <%= f.submit %>
   </p>
